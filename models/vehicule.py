@@ -2,7 +2,7 @@ from dataclasses import dataclass
 from .base_model import Serializable
 
 
-@dataclass
+@dataclass(frozen=True)
 class Vehicule(Serializable):
     id_vehicule: str
     marque: str
